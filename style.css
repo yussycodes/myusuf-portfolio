@@ -5,6 +5,160 @@
 
 
 }
+:root{
+    --primary-color: #222222;
+    --secondary-color:#F5F5F5;
+    --subheader-color:#A5A5A5;
+
+}
+html{
+    height: 100%;
+}
 body{
     background-color: #222222;
+    color: whitesmoke;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    
+}
+img{
+    max-width: 100%;
+}
+.logo{
+    max-width: 150px;
+    height: 150px;
+}
+.resume-link,.email-link{
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+}
+.topNavElements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #222222;
+    border: 1px solid rgba(137, 133, 133, 0.5);
+}
+.navMenuList{
+    display: none;
+    flex-direction: column;
+    align-items:start;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    height: 100vh;
+    width: 300px;
+    background-color: #222222;
+    position: fixed;
+    top: 0;
+    right: 0;  
+    z-index: 1;
+}
+.navMenuList li {
+    list-style: none;
+    font-size: 1.5rem;  
+}
+.navMenuList li > a{
+    text-decoration: none;
+    color: white; 
+}
+.openMobileMenu{
+    border: none;
+    background-color: transparent;
+}
+.closeMobileMenu{
+    display: none;
+    z-index: 999;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+}
+.container{
+    background-color: #222222;
+    border: 1px solid #222222;
+      
+
+}
+.hero-section{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 100px; 
+    border-bottom: 1px solid #444444;
+}
+
+
+
+.profile-frame{
+        display: inline-block; /* Ensure the container wraps around the image */
+        border-radius: 100%; /* Make the container round */
+        border: 20px solid #444444; /* Set border width and color */
+        overflow: hidden; /* Ensure the image stays within the container */
+        box-shadow: 0 0 20px rgb(0, 0,2);
+        margin-bottom: 20px;
+        width: 250px;
+        height: 250px;
+        background-color: #F5F5F5;
+}
+.profilepic{
+   width: 250px;
+   height: 250px;
+   border-radius: inherit;
+}
+.subheading{
+    font-size: 1.2em;
+    color: #444444;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: 400px;
+    margin-bottom: 20px;
+
+}
+.tabs{
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ padding-top: 1rem;
+}
+.tabs-btn{
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    color: #F5F5F5;
+
+}
+.tabs-btn button:active{
+    background-color: #aa2828;
+}
+
+.tab-content{
+    display: none;
+}
+.active-tab{
+    display: block;
 }
