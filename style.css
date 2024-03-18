@@ -6,9 +6,10 @@
 
 }
 :root{
-    --primary-color: #222222;
-    --secondary-color:#F5F5F5;
-    --subheader-color:#A5A5A5;
+    --base-color: #222222;
+    --ascent-color:#007bff;
+    --highlight-color:#ffcc00;
+    --natural-color:#ffff
 
 }
 html{
@@ -16,7 +17,7 @@ html{
 }
 body{
     background-color: #222222;
-    color: whitesmoke;
+    color:#DEDEDE;
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -31,15 +32,10 @@ img{
     max-width: 150px;
     height: 150px;
 }
-.resume-link,.email-link{
-    color: white;
-    padding: 0.5rem;
-    text-decoration: none;
-    border: 1px solid whitesmoke;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    
+ul li{
+    list-style: none;
 }
+
 .topNavElements{
     display: flex;
     justify-content: space-between;
@@ -90,12 +86,6 @@ img{
     background-color: transparent;
     border: none;
 }
-.container{
-    background-color: #222222;
-    border: 1px solid #222222;
-      
-
-}
 .hero-section{
     height: 100%;
     width: 100%; 
@@ -105,10 +95,14 @@ img{
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 100px; 
-    border-bottom: 1px solid #444444;
+    
 }
-
-
+.hero-content{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
 
 .profile-frame{
         display: inline-block; /* Ensure the container wraps around the image */
@@ -120,45 +114,211 @@ img{
         width: 250px;
         height: 250px;
         background-color: #F5F5F5;
+        
 }
 .profilepic{
-   width: 250px;
-   height: 250px;
-   border-radius: inherit;
+   border-radius: 50%;
 }
 .subheading{
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #444444;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: center;
 }
-.title{
-    font-size: 2em;
+.title-name{
+    font-size: 1.3em;
     text-transform: capitalize;
     font-weight: 400px;
     margin-bottom: 20px;
+    text-align: center;
+    
+}
 
+.hero-content > p{
+    color: #DEDEDE;
+    text-align: center;
+    margin-bottom: 40px;
 }
-.tabs{
- display: flex;
- justify-content: center;
- gap: 2rem;
- padding-top: 1rem;
+.hero-content > div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom:30px ;
+    gap:2rem;
 }
-.tabs-btn{
-    padding: 1rem;
-    background-color: transparent;
+.portfolio-link,.email-link,.resume-link{
+    color: white;
+    padding: 10px 8px;
+    width: 100px;
+    text-decoration: none;
+    text-transform: capitalize;
+       
+}
+.email-link{
+    background: #e95d2a;
     border: none;
-    color: #F5F5F5;
+}
+.portfolio-link{
+    border: 1px solid rgb(233, 93, 42,0.5); 
+}
+.resume-link{
+    background: #e95d2a;
+    border: none;
+    margin-left: 10px;
+    margin-top: 50px;
 
 }
-.tabs-btn button:active{
-    background-color: #aa2828;
-}
 
-.tab-content{
+.title-txt-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.title-txt-cont > h1{
+    color: #ffff;
+   
+}
+span{
+    color: #e95d2a;
+}
+.title-txt-cont > a{
     display: none;
+    color: #ffff;
+    text-decoration: none;
+    background: #e95d2a;
+    padding: 0.5rem;
+    margin-right: 8px;
+    font-size: 1.1em;
 }
-.active-tab{
-    display: block;
+.projects{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;    
+}.projects > h3{
+    text-align: left;
+}
+
+.image-project{
+    width: 300px;
+    height: 200px;
+}
+.experience-sec >div {
+    display: flex;
+    align-items:baseline;
+    gap: 1rem;
+}
+.shapes{
+    display: flex;
+    flex-direction: column;
+
+}
+.circle-shape{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #444444;
+
+}
+.vertical-line{
+    height: 130px;
+    border-left: 2px solid #444444;
+    margin-left: 8px;
+
+}
+
+
+.title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-align: left;
+}
+.experience-content > div h2 {
+    color: #DEDEDE;
+
+}
+.exp-cont-1{
+    margin-bottom: 25px;
+    color: #444444;
+    font-size: 0.9em;
+}
+.exp-cont-1 h2{
+    color: #DEDEDE;
+   }
+.exp-cont-1 p{
+ color: #444444;
+}
+
+.resume-sec{
+    margin-top: 15px;
+}
+.skills-section{
+    margin-top: 50px;
+}
+.skills-section > h1{
+
+}
+.skills-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.skills-list svg{
+    height: 60px;
+    width: 60px;
+}
+.testimonials-sec {
+    max-width: 350px;
+    min-height: 350px;
+    margin: 0 auto;
+}
+.testimonials{
+/*    
+    background: #f5f2ed;
+    color: #67646a;
+    width: 100%;
+    height: 100%;
+    padding: 0.5,rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px; */
+    width:100%;
+    height: 100%;
+    background: #f5f2ed;
+    margin-bottom: 30px;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+.testimonials >p{
+    margin-bottom: 8px; 
+    color: #444444;  
+}
+.testimonials > h4{
+    color: #222222;
+    text-transform: uppercase;
+}
+.contact-link{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #e95d2a;
+    color: #ffff;
+    text-decoration: none;
+    padding: 0.5rem;
+  
+    
+}
+.contact-link > a{
+    color: #ffff;
+    text-decoration: none;
+    margin: 0 auto;
+    text-transform: capitalize;
 }

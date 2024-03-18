@@ -14,11 +14,11 @@ closeMobileButton.addEventListener('click',function(){
      closeMobileButton.style.display = "none"
     });
 
-    function showTab(tabName){
-        const tabs = document.querySelectorAll('.tab-content')
-        tabs.forEach(tab=>{
-            tab.classList.remove('active-tab')
-        })
-        const selectedTabs = document.getElementById(tabName)
-        selectedTabs.classList.add('active-tab')
-    }
+    // function showTab(tabName){
+    //     const tabs = document.querySelectorAll('.tab-content')
+    //     tabs.forEach(tab=>{
+    //         tab.classList.remove('active-tab')
+    //     })
+    //     const selectedTabs = document.getElementById(tabName)
+    //     selectedTabs.classList.add('active-tab')
+    // }
